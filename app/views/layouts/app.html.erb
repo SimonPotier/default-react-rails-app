@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="referrer" content="same-origin"/>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+    <%= javascript_include_tag 'app' %>
+  </head>
+  <body class="body-app">
+    <noscript>
+      Please enable javascript to use this app
+    </noscript>
+
+    <div id="root"></div>
+
+    <%= javascript_pack_tag 'application' %>
+  </body>
+</html>
